@@ -1,0 +1,46 @@
+<!-- //created by Dipak prajapati in sep 2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Password_Generator</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+<p>Create strong password...</p>
+<div id="container">
+  <div id="displaybox">
+    <input type="text" id="password" readonly="readonly">
+    <button id="copybtn">Copy</button>
+  </div>
+
+  <div id="len">
+    <lable>Password Length:</lable>
+    <input type="text" id="input" name="length" autofocus>
+    <button id="btn" type="submit" name="length">create</button>
+  </div>
+  <p>Choose character you want to add:</p>
+  <form id="form">
+    <input type="checkbox" checked="checked" id="alphabet_cap" name="alphabet_cap" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+    <label for="alphabet_cap"> CAPITAL- ABCDEFGHIJKLMNOPQRSTUVWXYZ</label><br><br>
+
+    <input type="checkbox" id="alphabet_small" name="alphabet_small" value="abcdefghijklmnopqrstuvwxyz">
+    <label for="alphabet_small"> small - abcdefghijklmnopqrstuvwxyz</label><br><br>
+
+    <input type="checkbox" id="special_char" name="special_char" value="!@#$%^&*+/=">
+    <label for="special_char">Special - !@#$%^&*+/=</label><br><br>
+
+    <input type="checkbox" id="num" name="num" value="0123456789">
+    <label for="num">Numbers - 0123456789</label>
+  </form>
+
+  <p>@DipakPrajapati</p>
+
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>

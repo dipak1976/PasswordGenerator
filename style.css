@@ -1,0 +1,104 @@
+:root {
+  --background_color: #eeeeee;
+  --heading_color: #6f38c5;
+  --para_color: #820000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+p {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+#displaybox {
+  display: flex;
+}
+#copybtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 0.2rem;
+  margin: auto;
+}
+p {
+  color: var(--para_color);
+}
+h1 {
+  color: var(--heading_color);
+}
+#container {
+  margin: auto;
+  max-width: 30rem;
+  min-height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--background_color);
+  position: relative;
+}
+#len {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+#input,
+#btn {
+  width: 5rem;
+  height: 2rem;
+  margin: 5px auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--heading_color);
+  border-radius: 5px;
+}
+#btn:hover {
+  background: #cfd2cf;
+}
+
+#password {
+  width: 90%;
+  margin: 0.5rem auto;
+  padding: 10px;
+  height: 2.8rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#form {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+#form label {
+  font-size: 1.2rem;
+}
+#form input {
+  cursor: pointer;
+}
+
+/* media quary */
+@media screen and (max-width: 580px) {
+  #len {
+    display: block;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    margin: auto;
+  }
+  h1,
+  p {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    letter-spacing: 0.2rem;
+  }
+}
